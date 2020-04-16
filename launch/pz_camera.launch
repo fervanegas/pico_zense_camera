@@ -14,4 +14,7 @@
         <param name="rgb_width" value="$(arg rgb_width)" type="int"/>
         <param name="rgb_height" value="$(arg rgb_height)" type="int"/>
     </node>
+
+<node pkg="tf" type="static_transform_publisher" name="base_link_to_D710" args="0 0 0 -1.5708 0 -1.5708 /base_link /$(arg camera_name)_frame 10"/>
+
 </launch>

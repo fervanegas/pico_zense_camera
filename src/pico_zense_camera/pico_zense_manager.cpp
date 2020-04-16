@@ -273,7 +273,7 @@ void PicoSenseManager::run() {
 
         // Publish messages and camera info
         sensor_msgs::ImagePtr colour_msg = cv_bridge::CvImage(colour_ci->header,
-                                                              sensor_msgs::image_encodings::TYPE_8UC3,
+                                                              sensor_msgs::image_encodings::BGR8,
                                                               colour_mat).toImageMsg();
         sensor_msgs::ImagePtr depth_msg = cv_bridge::CvImage(depth_ci->header,
                                                              sensor_msgs::image_encodings::TYPE_16UC1,
