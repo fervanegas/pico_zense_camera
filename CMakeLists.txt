@@ -49,7 +49,7 @@ catkin_package(CATKIN_DEPENDS camera_info_manager image_transport tf2 tf2_ros ge
 # Pico Zense setup
 # ==============================================
 find_package(OpenCV REQUIRED)
-find_library(libpicozense_api NAMES libpicozense_api_x64_ubuntu_16.04.so PATHS src/pico_zense_camera/lib/)
+find_library(libpicozense_api NAMES libpicozense_api.so PATHS src/pico_zense_camera/lib/)
 include_directories(include include/pico_zense_camera ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
 
 add_executable(FrameViewer src/pico_zense_camera/FrameViewer.cpp)
