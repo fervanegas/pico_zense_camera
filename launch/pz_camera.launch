@@ -3,8 +3,8 @@
     <arg name="device_index" default="0"/>
     <arg name="depth_confidence_threshold" default="100"/>
     <arg name="depth_range" default="1.0"/>
-    <arg name="rgb_width" default="1280"/>
-    <arg name="rgb_height" default="720"/>
+    <arg name="rgb_width" default="1920"/>
+    <arg name="rgb_height" default="1080"/>
 
     <node pkg="pico_zense_camera" type="pico_zense_camera" name="pico_zense_manager" output="screen" required="true">
         <param name="camera_name" value="$(arg camera_name)" type="str"/>
